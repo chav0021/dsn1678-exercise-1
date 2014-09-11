@@ -1,0 +1,94 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+
+	font: normal 100%/1.5 sans-serif;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	background-color: #e6e6e6;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1, .uno {
+  margin-top: 0;
+  font-size: 1.296em;
+}
+
+h2, .dos {font-size: 1.215em;}
+
+small, .font_small {
+	font-size: .78em;
+	text-transform: uppercase;
+	color: #838383;
+	line-height: 1.7;
+}
+
+.main-wrapper {
+	overflow: auto;
+	border-radius: 8px; 
+	background-color: #fff;
+	padding-bottom: 2rem;
+	border: solid 1px #bebebe;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.steg-figure {
+	position: relative;
+}
+
+.steg-figure > figcaption {
+	font-family: 'Times New Roman', serif;
+	color: #fff;
+	background-color: rgba(0, 0, 0,.3);
+	font-style: italic;
+	position: absolute;
+	bottom: 0;
+	padding: .5rem;
+}
+
+.info {
+	overflow: auto;
+	padding: 1.75rem .5rem 0;
+}
+
+.tab {
+	float: left;
+	width: 33.33%;
+	margin-top: 1.7rem;
+	border-left: solid 1px #bebebe;
+	padding-left: .75rem;
+}
+
+.tab-none {
+	padding-left: 0;
+	border-left: none;
+}
+
+@media only screen and (min-width: 25em) {
+	.main-wrapper {
+		max-width: 26rem;
+	}
+}
